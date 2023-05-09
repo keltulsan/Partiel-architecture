@@ -1,14 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void createGrid();
-
-
 
 typedef struct Case
 {
 	int number;
 }Case;
+
+Case** createGrid();
 
 
 int main()
@@ -18,11 +17,12 @@ int main()
 	createGrid(nbLigne, nbColonne);
 }
 
-void createGrid(int nbLigne, int nbColonne)
+Case** createGrid(int nbLigne, int nbColonne)
 {
 	Case** Sudoku = (Case**)malloc(sizeof(Case*) * nbLigne);
 	for (int i = 0; i < nbColonne; i++)
 	{
 		Sudoku[i] = (Case*)malloc(sizeof(Case) * nbColonne);
 	}
+	return Sudoku;
 }
