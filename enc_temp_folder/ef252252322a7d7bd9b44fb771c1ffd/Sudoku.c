@@ -102,7 +102,7 @@ char askNumber(Case** grid, int nbLigne, int nbColonne)
 	return number;
 }
 
-int verifNumbers(Case** grid, int nbLigne, int nbColonne, int* victory)
+/*int verifNumbers(Case** grid, int nbLigne, int nbColonne, int* victory)
 {
 	char tab = malloc(sizeof(char) * 9);
 	int notIn = 1;
@@ -122,7 +122,6 @@ int verifNumbers(Case** grid, int nbLigne, int nbColonne, int* victory)
 
 			}
 		}
-	}
-}
+	*/
 
 
