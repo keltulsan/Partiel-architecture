@@ -25,4 +25,4 @@ void createGrid(int nbLigne, int nbColonne)
 	{
 		Sudoku[i] = (Case*)malloc(sizeof(Case) * nbColonne);
 	}
-} 
+}
